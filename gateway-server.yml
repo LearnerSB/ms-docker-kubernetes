@@ -1,0 +1,19 @@
+server:
+  port: 8072
+
+eureka:
+  instance:
+    # hostname: localhost
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+# same will show in Eureka
+# info:
+#   app:
+#     name: "accounts"
+#     description: "Eazy Bank Accounts Application"
+#     version: "1.0.0"
